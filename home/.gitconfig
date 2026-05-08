@@ -4,11 +4,10 @@
 [alias]
 	co = checkout
 	st = status
-	ls = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --decorate
 	incoming = "!git log ..origin/"$(git branch --show-current)""
-	outgouing = "!git log origin/"$(git branch --show-current)".."
+	outgoing = "!git log origin/"$(git branch --show-current)".."
 	aliases = config --get-regexp alias
-	bs = branch-status
 [color]
 	ui = true
     editor = nvim
