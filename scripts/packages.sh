@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 install_apt_packages() {
+    run_cmd "echo 'deb https://dl.bintray.com/dryzig/zig-debian bullseye main' | sudo tee -a /etc/apt/sources.list"
+
     run_cmd "sudo apt update"
 
     run_cmd "sudo apt install -y \
