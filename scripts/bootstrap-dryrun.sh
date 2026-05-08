@@ -3,7 +3,7 @@
 set -euo pipefail
 
 REPO_URL="https://github.com/morinb/dotfiles-linux.git"
-DOTFILES_DIR="${HOME}/.dotfiles-test"
+DOTFILES_DIR="${HOME}/.dotfiles"
 
 echo "================================="
 echo "DOTFILES DRY RUN BOOTSTRAP"
