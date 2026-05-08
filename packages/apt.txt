@@ -1,0 +1,13 @@
+git
+curl
+wget
+zsh
+stow
+ripgrep
+fd-find
+bat
+fzf
+neovim
+tmux
+jq
+btop
