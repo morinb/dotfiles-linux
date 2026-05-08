@@ -14,6 +14,7 @@
     editor = nvim
 [core]
 	autocrlf = input
+    pager = less -F -X
 [init]
 	defaultBranch = main
 [credential]
