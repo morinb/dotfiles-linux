@@ -24,12 +24,6 @@ install_fzf() {
     fi
 }
 
-install_zoxide() {
-    if ! command -v zoxide &>/dev/null; then
-        run_cmd "curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh"
-    fi
-}
-
 create_directories() {
     run_cmd "mkdir -p \
         ~/code \
