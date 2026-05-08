@@ -15,7 +15,7 @@ install_apt_packages() {
         stow \
         ripgrep \
         fd-find \
-        bat \
+        batcat \
         eza \
         neovim \
         fzf \
