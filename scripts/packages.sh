@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 install_apt_packages() {
-    run_cmd "echo 'deb https://dl.bintray.com/dryzig/zig-debian bullseye main' | sudo tee -a /etc/apt/sources.list"
+    run_cmd "curl -sS https://debian.griffo.io/EA0F721D231FDD3A0A17B9AC7808B4DD62C41256.asc | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/debian.griffo.io.gpg"
+    run_cmd 'echo "deb https://debian.griffo.io/apt $(lsb_release -sc 2>/dev/null) main" | sudo tee /etc/apt/sources.list.d/debian.griffo.io.list"'
+
 
     run_cmd "sudo apt update"
 
