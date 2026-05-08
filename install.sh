@@ -22,7 +22,6 @@ main() {
     detect_os
 
     install_apt_packages
-    install_ghostty
 
     install_oh_my_zsh
     install_fzf
