@@ -2,5 +2,5 @@ export EDITOR=nvim
 export VISUAL=nvim
 export TERMINAL=ghostty
 
-export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/mnt/2TO/Development/scripts/:$PATH"

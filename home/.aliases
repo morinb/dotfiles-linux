@@ -1,3 +1,7 @@
-alias cat="batcat"
-alias ls="eza --icons"
-alias ll="eza -la --icons"
+alias nvim="nvim-linux-x86_64.appimage"
+alias ll="eza -la --icons --git"
+alias ls="eza --icons --git"
+alias lart="eza -lart modified --git"
+alias lt="eza -la --tree -L2 --git"
+alias bat="batcat"
+
