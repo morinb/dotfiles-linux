@@ -4,3 +4,7 @@ export TERMINAL=ghostty
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/mnt/2TO/Development/scripts/:$PATH"
+
+export JAVA_HOME="$HOME/.jdks/current"
+export PATH="$JAVA_HOME/bin:$PATH"
+
