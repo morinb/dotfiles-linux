@@ -20,4 +20,13 @@ return {
   "hrsh7th/cmp-buffer",
   "hrsh7th/vim-vsnip",
   { "nvim-treesitter/nvim-treesitter", lazy = false, build = ':TSUpdate' },
+  { "nvim-tree/nvim-tree.lua", version = "*", lazy = false, dependencies = {
+      "nvim-tree/nvim-web-devicons",
+      },
+      config = function()
+        require("nvim-tree").setup({})
+
+        vim.keymap.set("n", "<Leader>e", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Open/Close file explorer" })
+      end,
+  }
 }
