@@ -17,6 +17,10 @@ install_oh_my_zsh() {
 
 }
 
+install_sdkman() {
+    run_cmd 'curl -s "https://get.sdkman.io" | bash'
+}
+
 install_fzf() {
     if [[ ! -d "$HOME/.fzf" ]]; then
         run_cmd "git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf"
