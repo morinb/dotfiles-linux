@@ -25,6 +25,7 @@ main() {
 
     install_oh_my_zsh
     install_fzf
+    install_sdkman
 
     create_directories
 

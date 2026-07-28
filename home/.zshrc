@@ -3,7 +3,6 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
-  docker
   sudo
 )
 
@@ -12,7 +11,7 @@ source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.exports
 source ~/.functions
-
+source ~/kotlin-completion.sh
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
